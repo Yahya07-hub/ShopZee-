@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header{
+    background-image: url(/img/banner/b19.jpg);
+    width: 100%;
+    height: 35vh;
+    // background-position: center;
+    background-size: cover;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+    h3{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+
+
+}
+// Blogs
+#blogs{
+    padding: 150px 150px 0 150px;
+    // background-color: var(--secondary);
+    
+    
+    .blog-box{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin-bottom: 100px;
+
+        h1{
+            color: rgb(181, 180, 180);
+            position: absolute;
+            top: -40px;
+            left: 0px;
+            font-size: 70px;
+            font-weight: 700;
+            z-index: -8;
+        }
+        
+        .blog-img{
+            width: 50%;
+            margin-right: 40px;
+            
+            
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 20%;
+            }
+        }
+        
+        .blog-img::after{
+            content: "";
+            width: 47%;
+            height: 95%;
+            border: 8px solid var(--primary);
+            position: absolute;
+            left: -45px;
+            top: -30px;
+            z-index: -9;
+            opacity: 0.7;
+        }
+
+        .blog-img:hover:after{
+            left: 0px;
+            top: 0px;
+            width: 44%;
+            height: 93%;
+            transition: 0.4s ease-in;
+        }
+
+        // Media Queries for the after and hover effect
+        @media (max-width: 1230px) {
+            .blog-img::after{
+                width: 45%;
+                height: 96%;
+                border: 6px solid var(--primary);
+            }
+        
+            .blog-img:hover:after{
+                width: 44%;
+                height: 94%;
+                
+            }
+        }
+        @media (max-width: 1070px) {        
+            .blog-img:hover:after{
+                width: 43%;                
+            }
+        }
+        @media (max-width: 950px) {        
+            .blog-img:hover:after{
+                width: 42%;                
+            }
+        }
+        
+        
+        .blog-content{
+            margin-right: 40px;
+            width: 50%;
+            
+            a{
+                font-size: 15px;
+                font-weight: 600;
+                position: relative;
+            }
+
+            a:hover{
+                color: var(--primary);
+                transition: 0.4s ease-in-out;
+            }
+
+            a::after{
+                content: " ";
+                width: 50px;
+                height: 1px;
+                position: absolute;
+                right: -60px;
+                top: 8px;
+                background-color: black;
+            }
+
+            a:hover::after{
+                background-color: var(--primary);
+                transition: 0.4s ease-in-out;
+            }
+
+            
+        }
+
+    }
+
+}
+
+// Recent Posts
+#recent-posts{
+    padding: 60px 30px;
+    margin: 0 25px;
+    background-color: rgb(230, 230, 230);
+
+    .line{
+        background-color: black;
+        width: 60px;
+        height: 5px;
+        margin: 25px 0;
+    }
+
+    // posts
+    .post-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+
+        .post-img{
+            margin-right: 25px;
+            
+            img{
+                width: 125px;
+                height: 125px;
+                object-fit: cover;
+                object-position: top center;
+            }
+
+            
+        }
+        .post-content{
+            p{
+                font-size: 15px;
+                margin-top: 0;
+                margin-bottom: 12px;
+            }
+            h4{
+                font-size: 15px;
+
+            }
+           
+        }
+
+    }
+}
+
+// Popular Hashtags
+#hashtags{
+    padding: 60px 30px;
+    margin: 25px 25px;
+    background-color: rgb(230, 230, 230);
+
+    .line{
+        background-color: black;
+        width: 60px;
+        height: 5px;
+        margin: 25px 0;
+    }
+
+    .tags{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .tag{
+            background-color: rgb(245, 245, 245);
+            padding: 8px 10px;
+            margin: 0;
+            color: var(--primary);
+        }
+    }
+}
+
+// Media Query
+@media (max-width: 1070px) { 
+         
+    #blogs{
+        padding: 120px 80px 0 80px;
+    }
+}
+
+@media (max-width: 800px){
+    #blogs{
+        
+        
+        .blog-box{
+            display: block;
+            
+            
+            h1{
+                font-size: 60px;
+            }
+            
+            .blog-img {
+                width: 100%;
+                margin-right: 0px;
+            }
+            
+            .blog-img::after{
+                width: 96%;
+                height: 63%;
+            }
+            
+            .blog-img:hover:after{
+                left: 0px;
+                top: 0px;
+                width: 98%;
+                height: 63%;
+                
+            }
+            
+            .blog-content{
+                margin-top: 30px;
+                width: 100%;
+                
+            }
+        }
+        
+        
+        
+    }
+}
+
+@media (max-width: 650px) {
+
+    .page-header{
+        
+        p{
+            font-size: 17px;
+            text-align: center;
+            padding: 0 20px;
+        }
+    
+    
+    }
+
+    #blogs{
+        padding: 100px 20px 0 20px;
+        
+        .blog-box{
+            display: block;
+            // align-items: flex-start;
+            // flex-direction: column;
+            
+            h1{
+                // top: -37px;
+                font-size: 60px;
+            }
+            
+            .blog-img {
+                width: 100%;
+                margin-right: 0px;
+            }
+            
+            .blog-img::after{
+                width: 96%;
+                height: 63%;
+                border: 4px solid var(--primary);
+                left: -15px;
+                top: -20px;
+            }
+            
+            .blog-img:hover:after{
+                left: 0px;
+                top: 0px;
+                width: 98%;
+                height: 63%;
+                
+            }
+            
+            .blog-content{
+                margin-top: 20px;
+                width: 100%;
+                
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 405px) {        
+    #blogs{
+        
+        .blog-box{
+            
+            .blog-img::after{
+                height: 60%;
+            }
+            
+            .blog-img:hover:after{
+                width: 97%;
+                height: 60%;
+                
+            }
+            
+            
+        }
+  
+    }
+}
+
+@media (max-width: 365px) {        
+    #blogs{
+        
+        .blog-box{
+            
+            .blog-img::after{
+                height: 57%;
+            }
+            
+            .blog-img:hover:after{
+                height: 57%;
+                
+            }
+        
+        }
+  
+    }
+}
+

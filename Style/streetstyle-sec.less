@@ -1,0 +1,255 @@
+// section{
+//     p{
+//         text-align: center;
+//         font-weight: 600;
+//     }
+// }
+
+*{
+    font-size: 1rem;
+}
+
+
+
+.featured-style{
+    // margin-top: 40px;
+    position: relative;
+    background-color: #0400ffd7;
+    height: 75rem;
+    margin-bottom: 4rem;
+    
+    // p & h2
+    p{
+        color: #ffffff;
+        line-height: 1.8rem;
+    }
+    h2{
+        color: #ffffff;
+    }
+    .text{
+        width: 40%;
+        height: 20rem;
+        position: absolute;
+        right: 0; 
+        margin-right: 4.25rem;
+
+    }
+    #info{
+    }
+
+    // button
+    .btn{
+        display: inline-block;
+        color: #ffffff;
+        border: 2px solid white;
+        background-color: transparent;
+        width: 12.5rem;
+        padding: 0.7rem;
+        text-align: start;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        transition: all 0.5s;
+        
+    }
+    
+    .btn span {
+        letter-spacing: 0.2rem;
+        position: relative;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    .btn span::after {
+        content: '\00bb';
+        position: absolute;
+        top: 0;
+        right: -1.25rem;
+        opacity: 0;
+        transition: 0.5s;
+        
+    }
+    
+    .btn:hover{
+        box-shadow: 0 4px 8px 0 #ffffff;
+    }
+
+    .btn:hover span {
+        padding-right: 5rem;
+    } 
+    
+    .btn:hover span::after {
+        opacity: 1;
+        right: 0;
+    }
+
+    // images
+    img{
+        width: 100%;
+    }
+    #img1{
+
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 2.5rem;
+            margin-left: 4.2rem;
+            width: 45%;
+            min-width: 35rem;
+            height: 65%; 
+
+        }
+    }
+    #img2{
+
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: 4.25rem;
+            margin-bottom: 2.5rem;
+            width: 44.5%;
+            min-width: 24rem;
+            height: 60%; 
+
+        }
+    }
+
+    #img3{
+
+        img{
+            width: 20%;
+            min-width: 10rem;
+            height: 25%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 4.2rem;
+            margin-bottom: 2.5rem;
+            
+        }
+    }
+    #img4{
+
+        img{
+            width: 20%;
+            height: 25%;
+            min-width: 10rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin-left: 22.5rem;
+            margin-bottom: 2.5rem;
+            
+        }
+    }
+
+}
+
+@media screen and (max-width:799px){
+    .featured-style{
+        height: 80vh;
+
+        .text{
+            height: 15vh;
+            margin-right: 2.25rem;
+            width: 42%;
+            h2{
+                font-size: 26px;
+            }
+            p{
+                line-height: 1.5rem;
+                font-size: 12px;
+                margin: 10px 0 15px 0;
+            }
+            
+        }
+    }
+    .featured-style #img1 img, .featured-style #img2 img {
+        width: 50%;
+        min-width: 200px;
+        height: 50%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .featured-style #img3 img {
+        margin-left: 1.2rem;
+        margin-bottom: 2.5rem;
+        min-width: 5rem;
+    }
+
+    .featured-style #img4 img {
+        margin-left: 8.5rem;
+        margin-bottom: 10.5rem;
+        min-width: 5rem;
+    }
+
+    .featured-style .btn {
+        width: 8rem;
+        padding: 0.6rem;
+        text-align: start;
+        font-weight: 600;
+        
+        span{
+            font-size: 13px;
+        }
+    }
+
+    .featured-style .btn span::after {
+        right: -0.5rem;    
+    }
+
+    .featured-style .btn:hover span {
+        padding-right: 2rem;
+    }   
+}
+
+@media screen and (max-width:477px){
+    .featured-style{
+        height: 50vh;
+        padding: 0px;
+        
+        
+        .text{
+            width: 80%;
+            margin-top: 70px;
+            
+            h2{
+                font-size: 26px;
+            }
+            p{
+                line-height: 1.2rem;
+                font-size: 12px;
+                margin: 5px 0 10px 0;
+                // text-align: center;
+            }
+            
+        }
+    }
+    .featured-style #img1 img,
+    .featured-style #img2 img,
+    .featured-style #img3 img,
+    .featured-style #img4 img{
+        display: none;
+    }
+
+    .featured-style .photo{
+        width: 50vh;
+        height: 50vh;
+        background-image:url(/img/products/Streetstyle/IMG_6228.jpg) ;
+        background-size: 100% 100%;
+        // background-position: top 40% left 0;
+        background-repeat: no-repeat;
+    }
+
+    .featured-style .overlay{
+        height: 50vh;
+        width: 50vh;
+        // background-color: rgba(0, 0, 0, 0.418);
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    }
+
+}

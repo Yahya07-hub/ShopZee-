@@ -1,0 +1,683 @@
+body {
+  background-color: #f9f9f9;
+  position: relative;
+  height: 100%;
+}
+.hero-container .heading {
+  text-align: center;
+  padding-top: 10px;
+  margin: 20px 0;
+}
+.hero-container .heading h2 {
+  color: var(--primary);
+  line-height: 1;
+}
+.hero-container .heading p {
+  margin: 0;
+  color: var(--primary);
+}
+.launches .heading {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+  padding: 20px 0;
+  background-color: #0b07fad7;
+}
+.launches .heading h2 {
+  color: white;
+  line-height: 1.4;
+}
+.launches .heading p {
+  color: white;
+  margin: 0;
+}
+.sneaker-posters {
+  margin-top: 30px;
+}
+.brands {
+  position: relative;
+  background-color: var(--primary);
+  border-top-right-radius: 80px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.brands .heading {
+  margin: 0;
+}
+.brands .heading h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: start;
+  padding-left: 15px;
+  color: white;
+  padding: 15px 0 15px 15px;
+}
+.brands .image img {
+  position: absolute;
+  top: 15px;
+  right: -150px;
+  border-top-right-radius: 80px;
+  width: 300px;
+  height: 500px;
+}
+.brands .brand-container {
+  display: grid;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(3, auto);
+}
+.brands .brand-container .adidas {
+  background: url(/img/Mens/Adidas.JPG);
+  background-position: center;
+  background-size: cover;
+}
+.brands .brand-container .adidas2 {
+  background: url(/img/Mens/Adidas\ logo2.JPG);
+  background-position: 0 40%;
+  background-size: cover;
+  grid-row: 2/3;
+  grid-column: 1 / 2;
+}
+.brands .brand-container .crocs {
+  background: url(https://i.pinimg.com/564x/76/76/88/76768837725d314ab87f1471339053b3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+.brands .brand-container .converse {
+  background: url(https://i.pinimg.com/564x/af/9b/08/af9b083befee8417966db51fe7cc7cb8.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+.brands .brand-container .skechers {
+  background: url(https://i.pinimg.com/564x/7b/ae/36/7bae36b81052eb84adbfa87a53089565.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.brands .brand-container .puma {
+  background: url(https://i.pinimg.com/564x/66/f1/ed/66f1edd300d1f37b10f6922261313014.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+.brands .brand-container .nb {
+  background: url(https://i.pinimg.com/564x/12/70/a5/1270a55e91b64a912e4e736ee9b8bb30.jpg);
+  background-size: cover;
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+.brands .brand-container .nike {
+  background: url(https://i.pinimg.com/564x/3f/d4/68/3fd468bce74160a8a7f305490267b9f2.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  z-index: 1;
+}
+.brands .brand-container .reebok {
+  background: url(https://i.pinimg.com/564x/7d/0b/86/7d0b86ca3b0f075cb7cf1ea0ff472769.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+  z-index: 1;
+}
+.brands2 {
+  position: relative;
+  background-color: var(--primary);
+  border-top-left-radius: 80px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.brands2 .heading {
+  margin: 0;
+}
+.brands2 .heading h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: end;
+  padding-left: 15px;
+  color: white;
+  padding: 15px 15px 15px 0;
+}
+.brands2 .image img {
+  position: absolute;
+  top: 15px;
+  left: -130px;
+  border-top-right-radius: 80px;
+  width: 300px;
+  height: 500px;
+}
+.brands2 .brand-container {
+  display: grid;
+  grid-template-rows: repeat(4, 130px);
+  grid-template-columns: repeat(3, 1fr);
+}
+.brands2 .brand-container .adidas {
+  background: url(/img/Mens/Adidas.JPG);
+  background-position: center;
+  background-size: cover;
+  grid-row: 1/2;
+  grid-column: 3 / 4;
+}
+.brands2 .brand-container .adidas2 {
+  background: url(/img/Mens/Adidas\ logo2.JPG);
+  background-position: 0 40%;
+  background-size: cover;
+  grid-row: 2/3;
+  grid-column: 3 / 4;
+}
+.brands2 .brand-container .crocs {
+  background: url(https://i.pinimg.com/564x/76/76/88/76768837725d314ab87f1471339053b3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+.brands2 .brand-container .converse {
+  background: url(https://i.pinimg.com/564x/af/9b/08/af9b083befee8417966db51fe7cc7cb8.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+}
+.brands2 .brand-container .skechers {
+  background: url(https://i.pinimg.com/564x/7b/ae/36/7bae36b81052eb84adbfa87a53089565.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.brands2 .brand-container .puma {
+  background: url(https://i.pinimg.com/564x/66/f1/ed/66f1edd300d1f37b10f6922261313014.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+.brands2 .brand-container .nb {
+  background: url(https://i.pinimg.com/564x/12/70/a5/1270a55e91b64a912e4e736ee9b8bb30.jpg);
+  background-size: cover;
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+}
+.brands2 .brand-container .nike {
+  background: url(https://i.pinimg.com/564x/3f/d4/68/3fd468bce74160a8a7f305490267b9f2.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  z-index: 2;
+}
+.brands2 .brand-container .reebok {
+  background: url(https://i.pinimg.com/564x/7d/0b/86/7d0b86ca3b0f075cb7cf1ea0ff472769.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+  z-index: 2;
+}
+.sneaker-cards {
+  padding: 0 30px;
+}
+.sneaker-cards .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.sneaker-cards .swiper-slide img {
+  height: 500px;
+}
+.step {
+  width: 100%;
+}
+.jordan-container {
+  width: 100%;
+}
+.jordan-container .heading {
+  text-align: center;
+  padding-top: 10px;
+  margin: 0;
+  padding: 20px 8px;
+}
+.jordan-container .heading h2 {
+  line-height: 1.3;
+  color: var(--primary);
+  font-size: 30px;
+}
+.jordan-container .image {
+  background: url(/img/Mens/basketball.JPG);
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.jordan-container .image .overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.jordan-container .image .overlay .text {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 8px;
+}
+.jordan-container .image .overlay .text h2 {
+  font-size: 25px;
+  color: white;
+  line-height: 1.3;
+}
+.jordan-container .image .overlay .text p {
+  color: white;
+}
+.jordan-container .collection h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.jordan-container .collection .poster {
+  display: none;
+}
+.jordan-container .collection .text {
+  display: none;
+}
+.jordan-container .collection .cards {
+  padding: 0 10px;
+}
+.jordan-container .collection .cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f3f3f3;
+  padding: 20px 20px;
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.jordan-container .collection .cards .card:hover img {
+  transform: rotate(0deg);
+}
+.jordan-container .collection .cards .card img {
+  transform: rotate(20deg);
+  max-width: 30%;
+  transition: all 0.3s ease-in;
+}
+.jordan-container .collection .cards .card .info {
+  font-size: 15px;
+}
+.jordan-container .collection .cards .card .info p {
+  font-weight: 600;
+  color: black;
+  margin: 10px 0 0 0;
+}
+.jordan-container .collection .cards .card button {
+  position: absolute;
+  right: 0px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 10px 18px;
+}
+.jordan-container .collection .cards .card button.active,
+.jordan-container .collection .cards .card button:hover {
+  transform: scale(105%);
+}
+.jordan-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+.jordan-container2 .text {
+  text-align: center;
+}
+.jordan-container2 .text h2 {
+  line-height: 1.3;
+  font-size: 30px;
+  padding: 0 20px;
+}
+.jordan-container2 .text .line {
+  background-color: black;
+  width: 60px;
+  height: 5px;
+  margin: 10px auto;
+}
+.jordan-container2 .text p {
+  font-weight: 600;
+  color: black;
+  margin: 14px 0 10px 0;
+  font-size: 18px;
+}
+.jordan-container2 .text .btn {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid white;
+  background-color: var(--primary);
+  width: 12.5rem;
+  padding: 0.7rem;
+  text-align: start;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.jordan-container2 .text .btn span {
+  letter-spacing: 0.2rem;
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+.jordan-container2 .text .btn span::after {
+  content: '\00bb';
+  position: absolute;
+  top: 0;
+  right: -1.25rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+.jordan-container2 .text .btn:hover {
+  box-shadow: 0 4px 8px 0 #0400ff;
+}
+.jordan-container2 .text .btn:hover span {
+  padding-right: 5rem;
+}
+.jordan-container2 .text .btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.jordan-container2 .image {
+  width: 50%;
+}
+.collins {
+  width: 100%;
+}
+.banner-sec {
+  padding: 30px;
+}
+.sc-banner1 .banner1 {
+  background-image: url(/img/Mens/lost\ and\ found\ bg\ .JPG);
+}
+.sc-banner1 .banner2 {
+  background-position: bottom right;
+  background-image: url(https://i.pinimg.com/564x/04/14/60/041460b38a027aafecfee160ddafb0fd.jpg);
+}
+.sc-banner2 .banner h2 {
+  color: var(--primary);
+}
+.sc-banner2 .banner3 {
+  background-image: url(/img/Mens/banner3.jpeg);
+}
+.sc-banner2 .banner4 {
+  background-image: url(https://i.pinimg.com/474x/80/27/ba/8027bad052b38adda2140a74d70fa32c.jpg);
+}
+.sc-banner2 .banner5 {
+  background-image: url(https://i.pinimg.com/474x/39/29/c7/3929c74cd6b3613d7051f52c69764ecf.jpg);
+}
+.videos .video {
+  padding: 20px 30px;
+  background-color: line;
+  background-color: var(--primary);
+}
+.videos .video .text {
+  text-align: center;
+  padding: 30px 20px;
+  color: white;
+}
+.videos .video .text h3 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+.videos .video .text span {
+  font-size: 22px;
+  line-height: 1.3;
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px 200px 200px;
+  grid-template-rows: 250px 100px;
+  grid-gap: 10px;
+}
+.container .item1 {
+  background: black;
+}
+.container .item2 {
+  background: yellow;
+}
+.container .item3 {
+  background: orange;
+}
+.container .item4 {
+  background: green;
+}
+.container .item5 {
+  background: blue;
+}
+.container .item6 {
+  background: purple;
+}
+.news-letter {
+  margin-top: 0;
+}
+@media (min-width: 600px) {
+  .sneaker-posters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+  .collins img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 80px;
+  }
+}
+@media (min-width: 799px) {
+  .jordan-container .image {
+    height: 50vh;
+  }
+  .jordan-container .image .text {
+    padding: 0 25px;
+  }
+  .jordan-container .image .text h2 {
+    font-size: 40px;
+  }
+  .jordan-container .image .text p {
+    font-size: 23px;
+  }
+  .jordan-container .collection {
+    background-color: #f9f9f9;
+    padding: 0 30px;
+  }
+  .jordan-container .collection h3 {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  .jordan-container .collection .line {
+    background-color: black;
+    width: 60px;
+    height: 5px;
+    margin: 0 auto;
+  }
+  .jordan-container .collection .collection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .jordan-container .collection .collection-container .poster {
+    display: block;
+  }
+  .jordan-container .collection .cards .card .info h5 {
+    font-size: 16px;
+  }
+  .jordan-container .collection .cards .card button {
+    right: -30px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  .jordan-container .collection .cards .card1,
+  .jordan-container .collection .cards .card2,
+  .jordan-container .collection .cards .card3 {
+    transition: all 0.6s ease-in-out;
+  }
+  .jordan-container .collection .cards .card1:hover h5,
+  .jordan-container .collection .cards .card2:hover h5,
+  .jordan-container .collection .cards .card3:hover h5 {
+    color: white;
+  }
+  .jordan-container .collection .cards .card1:hover p,
+  .jordan-container .collection .cards .card2:hover p,
+  .jordan-container .collection .cards .card3:hover p {
+    color: white;
+  }
+  .jordan-container .collection .cards .card1:hover {
+    background: linear-gradient(270deg, #bf8456, #ffdea1);
+  }
+  .jordan-container .collection .cards .card2:hover {
+    background-color: #9c09e5;
+  }
+  .jordan-container .collection .cards .card3:hover {
+    background-color: rgba(247, 140, 33, 0.954);
+  }
+  .jordan-container2 .image {
+    width: 40%;
+  }
+  .videos .video {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  }
+  .videos .video video {
+    height: 100%;
+  }
+  .videos .video .text {
+    color: white;
+    text-align: start;
+  }
+  .videos .video .text h3 {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .videos .video .text span {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}
+@media (min-width: 1000px) {
+  .swiper .swiper-wrapper .hero img {
+    height: 70vh;
+  }
+  .brands .brand-container {
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brands .heading h2 {
+    font-size: 40px;
+    padding: 15px 0 15px 15px;
+  }
+  .brands .image img {
+    position: absolute;
+    top: 40px;
+    right: -150px;
+    border-top-right-radius: 80px;
+    width: 400px;
+    height: 700px;
+  }
+  .brands2 .brand-container {
+    display: grid;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brands2 .heading h2 {
+    font-size: 40px;
+    padding: 15px 15px 15px 0;
+  }
+  .brands2 .image img {
+    position: absolute;
+    top: 40px;
+    left: -150px;
+    border-top-right-radius: 80px;
+    width: 400px;
+    height: 700px;
+  }
+  .jordan-container .sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+  }
+  .jordan-container .sub-container .image {
+    height: 100vh;
+    width: 100%;
+  }
+  .jordan-container .sub-container .image .overlay {
+    background-image: none;
+  }
+  .jordan-container .sub-container .image .overlay .text h2 {
+    display: none;
+  }
+  .jordan-container .sub-container .image .overlay .text p {
+    display: none;
+  }
+  .jordan-container .sub-container .collection {
+    background-color: #f3f3f3;
+    padding: 20px 30px;
+  }
+  .jordan-container .sub-container .collection .text {
+    display: block;
+    height: 100%;
+  }
+  .jordan-container .sub-container .collection .text h2 {
+    color: #0400ff;
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+  .jordan-container .sub-container .collection .text p {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+  }
+  .jordan-container .sub-container .collection .collection-container .poster {
+    display: none;
+  }
+  .jordan-container .sub-container .collection .cards .card .info {
+    padding-left: 20px;
+  }
+  .jordan-container .sub-container .collection .cards .card .info h5 {
+    font-size: 16px;
+  }
+  .jordan-container2 {
+    height: 70vh;
+  }
+  .jordan-container2 .text {
+    text-align: center;
+  }
+  .jordan-container2 .text h2 {
+    font-size: 40px;
+  }
+  .jordan-container2 .text p {
+    margin: 20px 0 10px 0;
+    font-size: 25px;
+  }
+}

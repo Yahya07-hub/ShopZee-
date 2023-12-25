@@ -1,0 +1,575 @@
+<!-- https://i.pinimg.com/originals/ed/8d/bb/ed8dbbdbd845b04162d9854e5e4523ce.gif -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="/Style/men.css">
+    <link rel="stylesheet" href="/Style/header.css">
+    <link rel="stylesheet" href="/Style/container.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Header navbar -->
+    <header>
+        <div id="toggle">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </div>
+        <div class="logo"><a href="/index.html">ShopZee</a></div>
+        <div class="search">
+            <input type="text" name="search" placeholder="search products" class="search-panel">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <!-- <a href=""><ion-icon class="s" name="search"></ion-icon></a> -->
+        </div>
+        <div>
+            <ul id="navlink" class="links">
+                <li><a href="men.html" class="under ">MEN</a></li>
+                <li><a href="women.html" class="under active">WOMEN</a></li>
+                <li><a href="kids.html" class="under">KIDS</a></li>
+                <li><a href="beauty.html" class="under">BEAUTY</a></li>
+                <li><a href="blog.html" class="under">BLOG</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+                <div class="wishlist">
+                    <a href="#"><i class="fa fa-heart"></i>Wishlist</a>
+                </div>
+                <div class="bag">
+                    <a href="bag.html"><i class="fa fa-bag-shopping"></i></i>Bag</a>
+                </div>
+            </ul>
+        </div>
+        <div class="mobile">
+            <a href="#"><i class="fa fa-search"></i></a>
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <a href="bag.html"><i class="fa fa-bag-shopping"></i></i></a>
+        </div>
+
+    </header>
+
+    <!-- Flat Off Poster -->
+    <div class="flatoff">
+        <!-- <img src="/img/Mens/off template.png" alt=""> -->
+        <img src="/img/Mens/flat.png" alt="">
+
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <!-- Swiper -->
+        <!-- <swiper-container class="swiperEl" init="true">
+            <swiper-slide>
+                <a href="#" class="img">
+                    <img src="/img/Mens/Levis.jpg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/Mens/Formalwaer.jpg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/Mens/nightwear.jpg" alt="">
+                </a>
+            </swiper-slide>
+
+        </swiper-container> -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#" class="img">
+                        <img src="/img/Mens/Levis.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="/img/Mens/Formalwaer.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="/img/Mens/nightwear.jpg" alt="">
+                    </a>
+                </div>
+
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+    </section>
+
+    <!-- grid Container -->
+    <section class="grid-container">
+        <div class="first poster">
+
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>T-Shirts</h3>
+                    <div class="line"></div>
+                    <p>Express yourself in style with our trendy and comfortable t-shirts that make a statement without
+                        saying a word.</p>
+                    <button class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover Now</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="second poster">
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>New Arrivals</h3>
+                    <div class="line"></div>
+                    <p>Discover the perfect fit and timeless style in our jeans collection, where comfort meets fashion
+                        effortlessly.</p>
+                    <button class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover Now</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="third poster">
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>Sneaker Store</h3>
+                    <div class="line"></div>
+                    <p>Exclusive sneakers from the world's top brands at unbeatable prices!</p>
+                    <a href="./sneakerstore.html" class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover
+                            Now</span></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fourth poster">
+            <p>item 4</p>
+        </div>
+        <div class="fifth poster">
+            <p>item 5</p>
+        </div>
+        <div class="sixth poster">
+            <p>item 6</p>
+        </div>
+        <div class="seventh poster">
+            <p>item 7</p>
+        </div>
+
+    </section>
+
+    <!-- Swiper in mob -->
+    <div class="swiper mySwiper ">
+        <div class="swiper-wrapper poster-swiper">
+            <div class="swiper-slide">
+                <div class="fourth poster">
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="fifth poster">
+                    <p>item 5</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="sixth poster">
+                    <p>item 6</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="seventh poster">
+                    <p>item 7</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Brand Cards -->
+    <section class="brand-cards">
+        <div class="heading section-p1">
+            <h2>Modern Masculinity</h2>
+            <p>Elevating Men's Style with Contemporary Confidence</p>
+        </div>
+        <div class="swiper mySwiper swapper-edit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images-static.nykaa.com/uploads/da5130a2-f64f-419b-96a6-6be3b958fc78.gif?tr=w-600,cm-pad_resize"
+                        alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/superdry.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/wrangle.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/gap.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NewNess for every ocasion -->
+    <section class="newness">
+        <div class="heading section-p1">
+            <h2>Newness For Every Occasion</h2>
+            <p>Style Different For Every Occasion</p>
+        </div>
+
+        <swiper-container class="swiperEl" init="true">
+            <swiper-slide>
+                <a href="#" class="img">
+                    <img src="./img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Walkon beach.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+
+        </swiper-container>
+
+    </section>
+
+    <!-- Watch Cards -->
+    <section class="brand-cards" style="padding-bottom: 40px;">
+        <div class="heading section-p1">
+            <h2>Timeless Elegance</h2>
+            <p>Unveiling the Ultimate Men's Watch Collection</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images-static.nykaa.com/uploads/9611133d-ab8a-4e4d-8335-666318a4a6c3.gif?tr=w-480,cm-pad_resize"
+                        alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/maserati.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/Casio.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/invicta.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Streetstyle -->
+    <section class="streetstyle">
+        <div class="heading section-p1">
+            <h2>Concrete Couture</h2>
+            <p>Mastering Street Style for the Modern Man</p>
+        </div>
+        <div class="swiper mySwiper swaper-edit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/Mens/Varisty.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/oversized.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/sleek shirts.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/baggy.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/hoodies.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/flannel shirt.avif" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div> -->
+                <!-- <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sneaker section -->
+    <section class="sneaker-cards">
+        <div class="heading section-p1">
+            <h2>City Kick Chronicles</h2>
+            <p>MWalk the Talk in Our Exclusive Men's Sneakers</p>
+        </div>
+        <div class="swiper mySwiper ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- newslatters -->
+    <div class="news-letter section-p1 section-m1">
+        <div class="news-text">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="section-p1">
+        <div class="col">
+            <img src="/img/shopzee.jpg" alt="" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>562 Wellingto Road, Street32, San Frans</p>
+            <p><strong>Phone: </strong>+91 1234567890</p>
+            <p><strong>Hours: </strong>10:00-18:00, Mon - Sat</p>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Ploicy</a>
+            <a href="#">Terms & Condition</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h4>Install App</h4>
+
+            <p>From App Store or Google Play</p>
+            <div class="app">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="" class="pay">
+
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 Your Fashion Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper('.swiper', {
+            // speed: 600,
+            rewind: true,
+            // freeMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false
+            // },
+
+            grabCursor: true,
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            // breakpoints: {
+            //     300: {
+            //         slidesPerView: 1,
+            //         // spaceBetween: 10,
+            //     },
+            //     600: {
+            //         slidesPerView: 2,
+            //         //   spaceBetween: 10,
+            //     },
+            //     768: {
+            //         slidesPerView: 3,
+            //         //   spaceBetween: 10,
+            //     },
+            //     1250: {
+            //         slidesPerView: 4,
+            //         //   spaceBetween: 10,
+            //     },
+            // },
+
+        });
+
+
+
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        var swiperEl = document.querySelector('swiper-container')
+        Object.assign(swiperEl, {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 2,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+
+                },
+            },
+        });
+
+        swiperEl.initialize();
+    </script>
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+
+       
+
+</body>
+
+</html>

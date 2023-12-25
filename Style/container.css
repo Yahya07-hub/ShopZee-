@@ -366,6 +366,7 @@
   justify-items: center;
   align-items: center;
   padding: 4rem 1rem;
+  height: 200px;
 }
 .sc-banner2 .banner h2 {
   font-size: 20px;
@@ -649,6 +650,9 @@ footer .copyright {
   }
   .sc-banner2 {
     grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+  .sc-banner2 .banner {
+    height: 120px;
   }
   .news-letter {
     padding: 40px 20px;

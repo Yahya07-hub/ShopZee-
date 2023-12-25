@@ -1,0 +1,1070 @@
+body {
+    background-color: rgb(249, 249, 249);
+    position: relative;
+    height: 100%;
+}
+
+// Top Hero container
+.hero-container {
+    .heading {
+        text-align: center;
+        padding-top: 10px;
+        margin: 20px 0;
+
+        h2 {
+            color: var(--primary);
+            line-height: 1;
+        }
+
+        p {
+            margin: 0;
+            color: var(--primary);
+        }
+    }
+}
+
+// Fab Launches section
+.launches {
+    .heading {
+        text-align: center;
+        padding-top: 10px;
+        margin: 0;
+        padding: 20px 0;
+        background-color: #0b07fad7;
+
+        h2 {
+            color: white;
+            line-height: 1.4;
+        }
+
+        p {
+            color: white;
+            margin: 0;
+
+        }
+    }
+}
+
+// Grand Brands
+
+.sneaker-posters{
+    margin-top: 30px;
+}
+.brands {
+    position: relative;
+
+    background-color: var(--primary);
+    border-top-right-radius: 80px;
+    overflow: hidden;
+    padding-top: 20px;
+
+    .heading {
+        margin: 0;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: start;
+            padding-left: 15px;
+            color: white;
+            padding: 15px 0 15px 15px;
+        }
+    }
+
+    .image {
+        img {
+            position: absolute;
+            top: 15px;
+            // left: 0;
+            right: -150px;
+            border-top-right-radius: 80px;
+            width: 300px;
+            height: 500px;
+        }
+    }
+
+    .brand-container {
+
+        display: grid;
+        grid-template-rows: repeat(4, 150px);
+        grid-template-columns: repeat(3, auto);
+
+
+        .brand-poster {
+            // border-radius: 6px;
+        }
+
+        .adidas {
+            background: url(/img/Mens/Adidas.JPG);
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .adidas2 {
+            background: url(/img/Mens/Adidas\ logo2.JPG);
+            background-position: 0 40%;
+            background-size: cover;
+            grid-row: 2/ 3;
+            grid-column: 1 / 2;
+
+        }
+
+        .crocs {
+            background: url(https://i.pinimg.com/564x/76/76/88/76768837725d314ab87f1471339053b3.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+
+        .converse {
+            background: url(https://i.pinimg.com/564x/af/9b/08/af9b083befee8417966db51fe7cc7cb8.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+        }
+
+        .skechers {
+            background: url(https://i.pinimg.com/564x/7b/ae/36/7bae36b81052eb84adbfa87a53089565.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        .puma {
+            background: url(https://i.pinimg.com/564x/66/f1/ed/66f1edd300d1f37b10f6922261313014.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+
+        }
+
+        .nb {
+            background: url(https://i.pinimg.com/564x/12/70/a5/1270a55e91b64a912e4e736ee9b8bb30.jpg);
+            // background-position: 20%;
+            background-size: cover;
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+        }
+
+        .nike {
+            background: url(https://i.pinimg.com/564x/3f/d4/68/3fd468bce74160a8a7f305490267b9f2.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+            z-index: 1;
+        }
+
+        .reebok {
+            background: url(https://i.pinimg.com/564x/7d/0b/86/7d0b86ca3b0f075cb7cf1ea0ff472769.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 4 / 5;
+            grid-column: 3 / 4;
+            z-index: 1;
+        }
+
+    }
+}
+
+// Brands2
+.brands2 {
+    position: relative;
+
+    background-color: var(--primary);
+    border-top-left-radius: 80px;
+    overflow: hidden;
+    padding-top: 20px;
+
+    .heading {
+        margin: 0;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 30px;
+            text-align: end;
+            padding-left: 15px;
+            color: white;
+            padding: 15px 15px 15px 0;
+        }
+    }
+
+    .image {
+        img {
+            position: absolute;
+            top: 15px;
+            left: -130px;
+            border-top-right-radius: 80px;
+            width: 300px;
+            height: 500px;
+        }
+    }
+
+    .brand-container {
+
+        display: grid;
+        grid-template-rows: repeat(4, 130px);
+        grid-template-columns: repeat(3, 1fr);
+
+
+        .brand-poster {
+            // border-radius: 6px;
+        }
+
+        .adidas {
+            background: url(/img/Mens/Adidas.JPG);
+            background-position: center;
+            background-size: cover;
+            grid-row: 1/ 2;
+            grid-column: 3 / 4;
+        }
+
+        .adidas2 {
+            background: url(/img/Mens/Adidas\ logo2.JPG);
+            background-position: 0 40%;
+            background-size: cover;
+            grid-row: 2/ 3;
+            grid-column: 3 / 4;
+            
+
+        }
+
+        .crocs {
+            background: url(https://i.pinimg.com/564x/76/76/88/76768837725d314ab87f1471339053b3.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 3 / 4;
+            grid-column: 3 / 4;
+
+        }
+
+        .converse {
+            background: url(https://i.pinimg.com/564x/af/9b/08/af9b083befee8417966db51fe7cc7cb8.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 4 / 5;
+            grid-column: 3 / 4;
+        }
+
+        .skechers {
+            background: url(https://i.pinimg.com/564x/7b/ae/36/7bae36b81052eb84adbfa87a53089565.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        .puma {
+            background: url(https://i.pinimg.com/564x/66/f1/ed/66f1edd300d1f37b10f6922261313014.jpg);
+            background-position: center;
+            background-size: cover;
+            grid-row: 3 / 4;
+            grid-column: 2 / 3;
+
+        }
+
+        .nb {
+            background: url(https://i.pinimg.com/564x/12/70/a5/1270a55e91b64a912e4e736ee9b8bb30.jpg);
+            // background-position: 20%;
+            background-size: cover;
+            grid-row: 4 / 5;
+            grid-column: 2 / 3;
+        }
+
+        .nike {
+            background: url(https://i.pinimg.com/564x/3f/d4/68/3fd468bce74160a8a7f305490267b9f2.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+            z-index: 2;
+        }
+
+        .reebok {
+            background: url(https://i.pinimg.com/564x/7d/0b/86/7d0b86ca3b0f075cb7cf1ea0ff472769.jpg);
+            background-size: cover;
+            background-position: center;
+            grid-row: 4 / 5;
+            grid-column: 1 / 2;
+            z-index: 2;
+        }
+
+    }
+}
+
+// Step ointo joy
+.sneaker-cards {
+    padding: 0 30px;
+    // .swiper {
+    //     width: 240px;
+    //     height: 320px;
+    // }
+
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .swiper-slide {
+
+        // background: var(--primary);
+        img {
+            height: 500px;
+            // padding: 0 10px;
+
+
+        }
+    }
+}
+
+.step {
+    width: 100%;
+}
+
+// Jordans Collection
+.jordan-container {
+    width: 100%;
+
+    .heading {
+        text-align: center;
+        padding-top: 10px;
+        margin: 0;
+        padding: 20px 8px;
+
+        h2 {
+            line-height: 1.3;
+            color: var(--primary);
+            font-size: 30px;
+        }
+    }
+
+    .image {
+        // width: 100%;
+        background: url(/img/Mens/basketball.JPG);
+        height: 40vh;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .overlay {
+            height: 100%;
+            width: 100%;
+            // background-color: rgba(0, 0, 0, 0.418);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+            .text {
+                height: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 0 8px;
+
+                h2 {
+
+                    font-size: 25px;
+                    color: white;
+                    line-height: 1.3;
+                }
+
+                p {
+                    color: white;
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .collection {
+        h3 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .poster {
+            display: none;
+        }
+
+        .text {
+            display: none;
+        }
+
+        .cards {
+            padding: 0 10px;
+
+            .card {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: rgb(243, 243, 243);
+                padding: 20px 20px;
+                border-radius: 20px;
+                position: relative;
+                cursor: pointer;
+                box-shadow: 0px 0px 16px 6px rgba(0, 0, 0, .25);
+                margin-bottom: 20px;
+                // transition: 1s ease-in ;
+
+                &:hover {
+                    img {
+                        transform: rotate(0deg);
+                    }
+                }
+
+
+                img {
+                    transform: rotate(20deg);
+                    max-width: 30%;
+                    transition: all 0.3s ease-in;
+
+                }
+
+                .info {
+                    font-size: 15px;
+
+                    h5 {
+                        // font-size: 16px;
+
+                    }
+
+                    p {
+                        font-weight: 600;
+                        color: black;
+                        margin: 10px 0 0 0;
+                    }
+                }
+
+                button {
+                    position: absolute;
+                    right: 0px;
+                    // top: 20px;
+                    border-radius: 20px;
+                    // width: 60px;
+                    height: 100%;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, .25);
+                    background-color: var(--primary);
+                    color: white;
+                    cursor: pointer;
+                    outline: none;
+                    border: none;
+                    transition: all .3s ease;
+
+                    padding: 10px 18px;
+
+                    &.active,
+                    &:hover {
+                        transform: scale(105%);
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+// container 2
+.jordan-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    // background-color: rgb(249, 249, 249);
+
+    .text {
+        text-align: center;
+
+        h2 {
+            line-height: 1.3;
+            font-size: 30px;
+            // margin-right: 10px;
+            padding: 0 20px;
+        }
+
+        .line {
+            background-color: black;
+            width: 60px;
+            height: 5px;
+            // margin: 15px 0;
+            margin: 10px auto;
+        }
+
+        p {
+            font-weight: 600;
+            color: black;
+            margin: 14px 0 10px 0;
+            font-size: 18px;
+        }
+
+        // button
+        .btn {
+            display: inline-block;
+            color: #ffffff;
+            border: 2px solid white;
+            background-color: var(--primary);
+            width: 12.5rem;
+            padding: 0.7rem;
+            text-align: start;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            cursor: pointer;
+            transition: all 0.5s;
+
+        }
+
+        .btn span {
+            letter-spacing: 0.2rem;
+            position: relative;
+            display: inline-block;
+            transition: 0.5s;
+        }
+
+        .btn span::after {
+            content: '\00bb';
+            position: absolute;
+            top: 0;
+            right: -1.25rem;
+            opacity: 0;
+            transition: 0.5s;
+
+        }
+
+        .btn:hover {
+            box-shadow: 0 4px 8px 0 #0400ff;
+        }
+
+        .btn:hover span {
+            padding-right: 5rem;
+        }
+
+        .btn:hover span::after {
+            opacity: 1;
+            right: 0;
+        }
+    }
+
+    .image {
+        width: 50%;
+
+        img {}
+    }
+}
+
+// Poster Sectiom
+.collins {
+    width: 100%;
+
+    .poster1 {}
+
+}
+
+// Bottom Banners
+.banner-sec {
+    padding: 30px;
+}
+
+.sc-banner1 {
+
+    .banner1 {
+        background-image: url(/img/Mens/lost\ and\ found\ bg\ .JPG);
+    }
+
+    .banner2 {
+        background-position: bottom right;
+        background-image: url(https://i.pinimg.com/564x/04/14/60/041460b38a027aafecfee160ddafb0fd.jpg) // background-position: to ;
+    }
+}
+
+.sc-banner2 {
+    .banner {
+        h2 {
+            color: var(--primary);
+        }
+
+    }
+
+    .banner3 {
+        background-image: url(/img/Mens/banner3.jpeg);
+    }
+
+    .banner4 {
+        background-image: url(https://i.pinimg.com/474x/80/27/ba/8027bad052b38adda2140a74d70fa32c.jpg);
+    }
+
+    .banner5 {
+        background-image: url(https://i.pinimg.com/474x/39/29/c7/3929c74cd6b3613d7051f52c69764ecf.jpg);
+    }
+}
+
+// Videos Section 
+.videos {
+    .video {
+        padding: 20px 30px;
+        background-color: line;
+        // background: rgba(1, 1, 1, 0.441);
+        // background: linear-gradient(90deg, rgba(1, 1, 1, 1.0), var(--primary));
+        background-color: var(--primary);
+
+
+        .text {
+            text-align: center;
+            padding: 30px 20px;
+            color: white;
+
+            h3 {
+                margin-bottom: 20px;
+                font-size: 26px;
+            }
+
+            span {
+                font-size: 22px;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 200px 200px;
+    grid-template-rows: 250px 100px;
+    grid-gap: 10px;
+
+
+    .item1 {
+        background: black;
+    }
+
+    .item2 {
+        background: yellow;
+    }
+
+    .item3 {
+        background: orange;
+    }
+
+    .item4 {
+        background: green;
+    }
+
+    .item5 {
+        background: blue;
+    }
+
+    .item6 {
+        background: purple;
+    }
+
+}
+
+.news-letter {
+    margin-top: 0;
+}
+
+@media (min-width: 600px) {
+    .sneaker-posters {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+
+    .collins {
+        img {
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 80px;
+        }
+    }
+}
+
+@media (min-width: 799px) {
+
+    // .collins {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: baseline;
+
+    //     // img{
+    //     //     width: 40%;
+    //     //     height: 40%;
+    //     // }
+    //     .poster1 {
+    //         display: none;
+    //     }
+
+    //     .poster2 {
+    //         display: block;
+    //         height: 50%;
+    //     }
+    // }
+
+    // jordans Retro 
+    .jordan-container {
+
+        .image {
+            height: 50vh;
+
+            .text {
+                padding: 0 25px;
+
+                h2 {
+                    font-size: 40px;
+
+                }
+
+                p {
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .collection {
+            background-color: rgb(249, 249, 249);
+            padding: 0 30px;
+
+            h3 {
+                margin: 0;
+                padding: 20px 0;
+                font-size: 24px;
+            }
+
+            .line {
+                background-color: black;
+                width: 60px;
+                height: 5px;
+                margin: 0 auto;
+            }
+
+            .collection-container {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+
+                .poster {
+                    display: block;
+
+                }
+
+            }
+
+            .cards {
+
+                .card {
+
+                    .info {
+
+                        h5 {
+                            font-size: 16px;
+                        }
+
+                    }
+
+                    button {
+                        right: -30px;
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+
+                .card1,
+                .card2,
+                .card3 {
+                    transition: all 0.6s ease-in-out;
+
+                    &:hover {
+                        h5 {
+                            color: white;
+                        }
+
+                        p {
+                            color: white;
+                        }
+                    }
+                }
+
+                .card1 {
+                    &:hover {
+                        background: linear-gradient(270deg, rgba(191, 132, 86, 1.0), rgba(255, 222, 161, 1.0));
+                    }
+                }
+
+                .card2 {
+                    &:hover {
+                        background-color: rgb(156, 9, 229);
+                    }
+                }
+
+                .card3 {
+                    &:hover {
+                        background-color: rgba(247, 140, 33, 0.954);
+                    }
+                }
+            }
+        }
+    }
+
+    // container2{
+    .jordan-container2 {
+
+        .image {
+            width: 40%;
+
+            img {}
+        }
+    }
+
+
+    // Videos
+    .videos {
+
+        .video {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+
+            video {
+                height: 100%;
+                // width: 80vw;
+            }
+
+            .text {
+                color: white;
+                text-align: start;
+
+                h3 {
+                    margin-bottom: 20px;
+                    font-size: 26px;
+                }
+
+                span {
+                    font-size: 22px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .swiper {
+
+        .swiper-wrapper {
+
+            .hero {
+                img {
+                    height: 70vh;
+                }
+            }
+        }
+    }
+
+    //Brand Grand 
+    
+    .brands {
+
+        .brand-container {
+            display: grid;
+            grid-template-rows: repeat(4, 200px);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .heading{
+            h2 {
+                font-size: 40px;
+                padding: 15px 0 15px 15px;
+            }
+
+        }
+
+        .image {
+            img {
+                position: absolute;
+                top: 40px;
+                // left: 0;
+                right: -150px;
+                border-top-right-radius: 80px;
+                width: 400px;
+                height: 700px;
+            }
+        }
+    }
+
+    .brands2 {
+
+        .brand-container {
+            display: grid;
+            grid-template-rows: repeat(4, 200px);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .heading{
+            h2 {
+                font-size: 40px;
+                padding: 15px 15px 15px 0;
+            }
+
+        }
+
+        .image {
+            img {
+                position: absolute;
+                top: 40px;
+                // left: 0;
+                left: -150px;
+                border-top-right-radius: 80px;
+                width: 400px;
+                height: 700px;
+            }
+        }
+    }
+
+    // jordans Retro 
+    .jordan-container {
+
+        .sub-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(243, 243, 243);
+
+            .image {
+                height: 100vh;
+                width: 100%;
+
+                .overlay {
+                    background-image: none;
+
+                    .text {
+
+                        h2 {
+                            display: none;
+                        }
+
+                        p {
+                            display: none;
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+            .collection {
+                background-color: rgb(243, 243, 243);
+                padding: 20px 30px;
+
+                .text {
+                    display: block;
+                    height: 100%;
+
+                    h2 {
+                        color: #0400ff;
+                        font-size: 50px;
+                        margin-bottom: 30px;
+                        line-height: 1.3;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: black;
+                    }
+
+
+                }
+
+
+                .collection-container {
+
+                    .poster {
+                        display: none;
+
+                    }
+                }
+
+                .cards {
+
+                    .card {
+
+                        .info {
+                            padding-left: 20px;
+
+                            h5 {
+                                font-size: 16px;
+                            }
+
+                        }
+
+
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    // container 2
+    .jordan-container2 {
+
+
+        height: 70vh;
+
+        .text {
+            text-align: center;
+
+            h2 {
+                font-size: 40px;
+
+            }
+
+            p {
+                margin: 20px 0 10px 0;
+                font-size: 25px;
+            }
+        }
+    }
+
+}
+
+// .collins {
+//     display: flex;
+//     justify-content: center;
+//     align-items: baseline;
+
+//     // img{
+//     //     width: 40%;
+//     //     height: 40%;
+//     // }
+//     .poster1 {
+//         display: block;
+//         width: 40%;
+//         height: 40%;
+//     }
+
+//     .poster2 {
+//         display: none;
+
+//         height: 50%;
+//     }
+// }
+
+// Brand Grand

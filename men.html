@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <!-- Css File -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/Style/men.css">
     <link rel="stylesheet" href="/Style/header.css">
     <link rel="stylesheet" href="/Style/container.css">
-    <link rel="stylesheet" href="/Style/men.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -55,41 +57,390 @@
 
     </header>
 
+    <!-- Flat Off Poster -->
+    <div class="flatoff">
+        <!-- <img src="/img/Mens/off template.png" alt=""> -->
+        <img src="/img/Mens/flat.png" alt="">
+
+    </div>
+
     <!-- Hero Section -->
     <section class="hero-container">
         <!-- Swiper -->
-        <div class="swiper ">
-            <!-- Additional required wrapper -->
+        <!-- <swiper-container class="swiperEl" init="true">
+            <swiper-slide>
+                <a href="#" class="img">
+                    <img src="/img/Mens/Levis.jpg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/Mens/Formalwaer.jpg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/Mens/nightwear.jpg" alt="">
+                </a>
+            </swiper-slide>
+
+        </swiper-container> -->
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Slides -->
                 <div class="swiper-slide">
-                    <a href="">
+                    <a href="#" class="img">
                         <img src="/img/Mens/Levis.jpg" alt="">
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="">
+                    <a href="#">
                         <img src="/img/Mens/Formalwaer.jpg" alt="">
                     </a>
                 </div>
                 <div class="swiper-slide">
-                    <a href="">
+                    <a href="#">
                         <img src="/img/Mens/nightwear.jpg" alt="">
                     </a>
                 </div>
-                ...
+
             </div>
-            <!-- If we need pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-scrollbar"></div>
+        </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+    </section>
 
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+    <!-- grid Container -->
+    <section class="grid-container">
+        <div class="first poster">
+
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>T-Shirts</h3>
+                    <div class="line"></div>
+                    <p>Express yourself in style with our trendy and comfortable t-shirts that make a statement without
+                        saying a word.
+                    </p>
+                        <div class="btnn">
+                            <button class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover Now</span></button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="second poster">
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>Jeans</h3>
+                    <div class="line"></div>
+                    <p>Discover the perfect fit and timeless style in our jeans collection, where comfort meets fashion
+                        effortlessly.
+                    </p>
+                    <div class="btnn">
+                        <button class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover Now</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third poster">
+            <div class="overlay">
+
+                <div class="text">
+                    <h3>Sneaker Store</h3>
+                    <div class="line"></div>
+                    <p>Exclusive sneakers from the world's top brands at unbeatable prices!</p>
+                    <div class="btnn">
+                        <a href="./sneakerstore.html" class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover
+                            Now</span></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fourth poster">
+            <p>item 4</p>
+        </div>
+        <div class="fifth poster">
+            <p>item 5</p>
+        </div>
+        <div class="sixth poster">
+            <p>item 6</p>
+        </div>
+        <div class="seventh poster">
+            <p>item 7</p>
+        </div>
+
+    </section>
+
+    <!-- Swiper in mob -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper poster-swiper">
+            <div class="swiper-slide">
+                <div class="fourth poster">
+                    <p></p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="fifth poster">
+                    <p>item 5</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="sixth poster">
+                    <p>item 6</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="seventh poster">
+                    <p>item 7</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Brand Cards -->
+    <section class="brand-cards">
+        <div class="heading ">
+            <h2>Modern Masculinity</h2>
+            <p>Elevating Men's Style with Contemporary Confidence</p>
+        </div>
+        <div class="swiper mySwiper swapper-edit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images-static.nykaa.com/uploads/da5130a2-f64f-419b-96a6-6be3b958fc78.gif?tr=w-600,cm-pad_resize"
+                        alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/superdry.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/wrangle.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/gap.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
         </div>
     </section>
+
+    <!-- NewNess for every ocasion -->
+    <section class="newness">
+        <div class="heading ">
+            <h2>Newness For Every Occasion</h2>
+            <p>Style Different For Every Occasion</p>
+        </div>
+
+        <swiper-container class="swiperEl" init="true">
+            <swiper-slide>
+                <a href="#" class="img">
+                    <img src="./img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Walkon beach.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+            <swiper-slide>
+                <a href="#">
+                    <img src="/img/products/Back to office men.jpeg" alt="">
+                </a>
+            </swiper-slide>
+
+        </swiper-container>
+
+    </section>
+
+    <!-- Watch Cards -->
+    <section class="brand-cards" style="padding-bottom: 40px;">
+        <div class="heading ">
+            <h2>Timeless Elegance</h2>
+            <p>Unveiling the Ultimate Men's Watch Collection</p>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images-static.nykaa.com/uploads/9611133d-ab8a-4e4d-8335-666318a4a6c3.gif?tr=w-480,cm-pad_resize"
+                        alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/maserati.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/Casio.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/invicta.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/lee.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Streetstyle -->
+    <section class="streetstyle">
+        <div class="heading ">
+            <h2>Concrete Couture</h2>
+            <p>Mastering Street Style for the Modern Man</p>
+        </div>
+        <div class="swiper mySwiper swaper-edit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/img/Mens/Varisty.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/oversized.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/sleek shirts.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/baggy.jpg" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/hoodies.avif" alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/flannel shirt.avif" alt="">
+                    </a>
+                </div>
+                <!-- <div class="swiper-slide">
+                    <a href="">
+                        <img src="/img/Mens/snitch.jpg" alt="">
+                    </a>
+                </div> -->
+                <!-- <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div> -->
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sneaker section -->
+    <section class="sneaker-container">
+        <div class="sneakerimg">
+            <img src="https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg" alt="">
+        </div>
+        <div class="image">
+
+        </div>
+        <div class="content">
+            <div class="text">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Jwells -->
+
+    <section class="add-ons">
+        <div class="heading">
+            <h2>Upgrade Your Lifestyle</h2>
+            <p>Enhance Your Experience with Our Premium Add-On Accessories Collection!</p>
+        </div>
+
+        <d class="banner-section">
+            <a href="" class="jwells">
+                <div class="overlay">
+                    <div class="text">
+                        <div class="head">
+                            <h3>New Arrivals</h3>
+                            <div class="line"></div>
+                        </div>
+                        <div class="btnn">
+                            <button class="btn" style="vertical-align:middle" id="dig-btn"><span>Discover Now</span></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="wallet">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="glasses">
+                <div class="overlay">
+                </div>
+            </div>
+            <div class="belts">
+                <div class="overlay">     
+                </div>
+            </div>
+        </d>
+    </section>
+
+    <!-- newslatters -->
+    <div class="news-letter section-p1 section-m1">
+        <div class="news-text">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your Email Address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </div>
+
     <!-- footer -->
     <footer class="section-p1">
         <div class="col">
@@ -144,15 +495,17 @@
             <p>&copy; 2023 Your Fashion Blog. All rights reserved.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.swiper', {
+
+        var swiper = new Swiper('.swiper', {
             speed: 600,
             rewind: true,
+            // freeMode: true,
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
@@ -161,16 +514,71 @@
                 delay: 3000,
                 disableOnInteraction: false
             },
-            // If we need pagination
-            // pagination: {
-            //     el: '.swiper-pagination',
-            //     clickable: true
-            // },
-            grabCursor: true,
 
+            grabCursor: true,
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                600: {
+                    slidesPerView: 2,
+                      spaceBetween: 10,
+                },
+                799: {
+                    slidesPerView: 3,
+                      spaceBetween: 5,
+                },
+                1250: {
+                    slidesPerView: 4,
+                      spaceBetween: 10,
+                },
+            },
 
         });
+
+
+
     </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        var swiperEl = document.querySelector('swiper-container')
+        Object.assign(swiperEl, {
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 2,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+
+                },
+            },
+        });
+
+        swiperEl.initialize();
+    </script>
+
+
+    <!-- Javascript File -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>

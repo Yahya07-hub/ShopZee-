@@ -1,20 +1,460 @@
+body {
+    position: relative;
+    height: 100%;
+}
 
-.hero-container{
+.heading {
+    padding: 5px 40px;
+
+    h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+}
+
+.btnn {
+
+    .btn {
+        display: inline-block;
+        color: #ffffff;
+        border: 2px solid white;
+        background-color: transparent;
+        width: 14rem;
+        padding: 0.7rem;
+        text-align: start;
+        font-weight: 600;
+        margin-top: 0.5rem;
+        cursor: pointer;
+        transition: all 0.5s;
+
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    .btn span {
+        letter-spacing: 0.2rem;
+        position: relative;
+        display: inline-block;
+        transition: 0.5s;
+    }
+
+    .btn span::after {
+        content: '\00bb';
+        position: absolute;
+        top: 0;
+        right: -1.25rem;
+        opacity: 0;
+        transition: 0.5s;
+
+    }
+
+    .btn:hover {
+        box-shadow: 0 4px 8px 0 #ffffff;
+        // background-color: #0400ff;
+    }
+
+    .btn:hover span {
+        padding-right: 3rem;
+    }
+
+    .btn:hover span::after {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+.overlay {
+
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+    .text {
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 8px;
+
+        h3 {
+
+            font-size: 25px;
+            color: var(--primary);
+            line-height: 1.3;
+        }
+
+        p {
+            color: white;
+        }
+
+    }
+
+    .line {
+        background-color: var(--primary);
+        width: 60px;
+        height: 5px;
+        // margin: 15px 0;
+        margin: 10px auto;
+    }
+
+
+}
+
+// Hero Container
+.hero-container {
     height: 60vh;
     margin-bottom: 20px;
+
     .swiper {
         height: 60vh;
 
-        .swiper-wrapper{
+        .swiper-wrapper {
 
-            img{
+            img {
                 border-bottom-right-radius: 20px;
                 border-bottom-left-radius: 20px;
                 height: 100%;
                 width: 100%;
-                
+
             }
         }
     }
-    
+
 }
+
+// Grid Boxes
+.grid-container {
+
+
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    padding: 0 15px;
+    grid-gap: 10px;
+    margin-bottom: 10px;
+
+    .poster {
+        // padding: 20px;
+        // max-width: px;
+        // background-size: cover;
+        // justify-content: center;
+        // align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        // box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .15);
+        cursor: pointer;
+
+
+
+    }
+
+    .first {
+        background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+
+    .second {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        // grid-area: 2 / 1 / 3 / 2;
+        // background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+        background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+        background-position: 0% 55%;
+        background-repeat: no-repeat;
+
+    }
+
+    .third {
+        grid-row: 3 / 4;
+        // background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+        background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .first,
+    .second,
+    .third {
+        position: relative;
+        overflow: hidden;
+
+        .overlay {
+            transform: translateY(-110%);
+            position: absolute;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+            .overlay {
+                transform: translateY(0%);
+            }
+        }
+    }
+
+    .fourth,
+    .fifth,
+    .sixth,
+    .seventh {
+        display: none;
+    }
+
+
+}
+
+// Swiper in Mob 
+.poster-swiper {
+
+    // padding: 0 15px;
+    .poster {
+        height: 250px;
+        margin: 0 15px 10px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    }
+
+    .fourth {
+        background: url(https://i.pinimg.com/474x/68/3f/20/683f2061bdceca5cc50838bfae0e34bd.jpg);
+        // background: url(/img/Mens/off\ template.png);
+
+    }
+
+    .fifth {
+
+        background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+    }
+
+    .sixth {
+        // background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+        background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+    }
+
+    .seventh {
+        background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+        // background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+    }
+}
+
+// 20% Off poster
+.flatoff {
+    width: 100%;
+    padding: 20px 0;
+}
+
+// Brand Cards
+.brand-cards {
+    padding: 0 20px;
+
+    .swiper-slide {
+
+        // background: var(--primary);
+        img {
+            height: 500px;
+            padding: 0 10px;
+            border-radius: 20px;
+
+        }
+    }
+}
+
+// Newness for every ocasion
+
+// Watch Cards
+
+
+// Street style
+.streetstyle {
+    width: 100%;
+    padding: 30px 20px;
+    background-color: var(--primary);
+
+    .heading {
+        
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    }
+
+    .swiper-slide {
+
+        // background: var(--primary);
+        img {
+            height: 500px;
+            padding: 0 10px;
+
+
+        }
+    }
+}
+
+// sneaker section
+.sneaker-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50vh;
+    position: relative;
+
+    .image {
+        background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+        background-position: left;
+        // background-size: cover;
+    }
+
+    .content {
+        background-color: rgb(255, 245, 229);
+        grid-column: 2 / 4;
+    }
+
+    .sneakerimg {
+        width: 60%;
+        left: 90px;
+        top: 80px;
+        position: absolute;
+
+        img {
+            height: 50%;
+            width: 60%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+
+        }
+    }
+}
+
+.banner-section {
+    display: grid;
+    gap: 10px;
+    padding: 10px 30px;
+    // grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 150px);
+
+
+
+    .jwells {
+        grid-row: span 2;
+        background: url(/img/Mens/jwells.jpg);
+        background-position: center;
+        background-size: cover;
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+
+            .line {
+                background-color: #ffffff;
+            }
+
+            h3 {
+                color: #ffffff;
+            }
+        }
+    }
+
+    .wallet {
+
+        background: url(https://i.pinimg.com/564x/02/df/a4/02dfa42f4b01973fd14ee4fc53f50b2e.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .glasses {
+        background: url(https://i.pinimg.com/564x/8b/ae/6c/8bae6c04c492a07d4c172c56ede31fb9.jpg);
+        background-position: center;
+        background-size: cover;
+        grid-row: span 2;
+    }
+
+    .belts {
+        background: url(https://i.pinimg.com/474x/56/f0/95/56f095f4d52b901a5a3168dc795ebb43.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .jwells,
+    .wallet,
+    .glasses,
+    .belts {
+        .overlay {
+
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+        }
+    }
+
+}
+
+
+@media (min-width: 520px) {
+    .swiper-wrapper.poster-swiper {
+        display: none;
+    }
+
+    .grid-container {
+
+        .fourth,
+        .fifth,
+        .sixth,
+        .seventh {
+            display: block;
+        }
+
+        grid-template-columns: repeat(3, 1fr);
+
+        .fourth {
+            grid-row: 1 / 3;
+            background: url(https://i.pinimg.com/474x/68/3f/20/683f2061bdceca5cc50838bfae0e34bd.jpg);
+
+
+        }
+
+        .fifth {
+            grid-row: 3 / 4;
+            grid-column: 2 / 4;
+            background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+        }
+
+        .sixth {
+            background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+            // background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+        }
+
+        .seventh {
+            background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+            // background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+
+
+        }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+// Watches Url
+// background: url(https://images-static.nykaa.com/uploads/9611133d-ab8a-4e4d-8335-666318a4a6c3.gif?tr=w-120,cm-pad_resize);
+// Glayers url
+// https://images-static.nykaa.com/uploads/faeb5d12-2188-4395-8c6f-da11b3427725.gif?tr=w-120,cm-pad_resize
+// New in url
+// https://images-static.nykaa.com/uploads/da5130a2-f64f-419b-96a6-6be3b958fc78.gif?tr=w-150,cm-pad_resize

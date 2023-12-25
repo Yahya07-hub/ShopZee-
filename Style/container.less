@@ -657,13 +657,13 @@
     grid-gap: 20px;
     // grid-template-columns: 1fr 1.3fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-
     padding-top: 0;
-
+    
     .banner {
         justify-items: center;
         align-items: center;
         padding: 4rem 1rem;
+        height: 200px;
 
         h2 {
             font-size: 20px;
@@ -933,7 +933,7 @@ footer {
 
     .sc-banner2 {
         grid-template-columns: repeat(auto-fit, minmax(28%, 1fr));
-
+        
         .banner4, 
         .banner3,
         .banner5{
@@ -1045,6 +1045,11 @@ footer {
     
     .sc-banner2{
         grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+        .banner{
+            height: 120px;
+
+        }
     }
 
     .news-letter {

@@ -1,3 +1,82 @@
+body {
+  position: relative;
+  height: 100%;
+}
+.heading {
+  padding: 5px 40px;
+}
+.heading h2 {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.btnn .btn {
+  display: inline-block;
+  color: #ffffff;
+  border: 2px solid white;
+  background-color: transparent;
+  width: 14rem;
+  padding: 0.7rem;
+  text-align: start;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btnn a {
+  font-size: 13px;
+}
+.btnn .btn span {
+  letter-spacing: 0.2rem;
+  position: relative;
+  display: inline-block;
+  transition: 0.5s;
+}
+.btnn .btn span::after {
+  content: '\00bb';
+  position: absolute;
+  top: 0;
+  right: -1.25rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+.btnn .btn:hover {
+  box-shadow: 0 4px 8px 0 #ffffff;
+}
+.btnn .btn:hover span {
+  padding-right: 3rem;
+}
+.btnn .btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+.overlay .text {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 8px;
+}
+.overlay .text h3 {
+  font-size: 25px;
+  color: var(--primary);
+  line-height: 1.3;
+}
+.overlay .text p {
+  color: white;
+}
+.overlay .line {
+  background-color: var(--primary);
+  width: 60px;
+  height: 5px;
+  margin: 10px auto;
+}
 .hero-container {
   height: 60vh;
   margin-bottom: 20px;
@@ -10,4 +89,203 @@
   border-bottom-left-radius: 20px;
   height: 100%;
   width: 100%;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 250px);
+  padding: 0 15px;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+.grid-container .poster {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.grid-container .first {
+  background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+.grid-container .second {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+  background-position: 0% 55%;
+  background-repeat: no-repeat;
+}
+.grid-container .third {
+  grid-row: 3 / 4;
+  background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+}
+.grid-container .first,
+.grid-container .second,
+.grid-container .third {
+  position: relative;
+  overflow: hidden;
+}
+.grid-container .first .overlay,
+.grid-container .second .overlay,
+.grid-container .third .overlay {
+  transform: translateY(-110%);
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+.grid-container .first:hover .overlay,
+.grid-container .second:hover .overlay,
+.grid-container .third:hover .overlay {
+  transform: translateY(0%);
+}
+.grid-container .fourth,
+.grid-container .fifth,
+.grid-container .sixth,
+.grid-container .seventh {
+  display: none;
+}
+.poster-swiper .poster {
+  height: 250px;
+  margin: 0 15px 10px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.poster-swiper .fourth {
+  background: url(https://i.pinimg.com/474x/68/3f/20/683f2061bdceca5cc50838bfae0e34bd.jpg);
+}
+.poster-swiper .fifth {
+  background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+}
+.poster-swiper .sixth {
+  background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+}
+.poster-swiper .seventh {
+  background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+}
+.flatoff {
+  width: 100%;
+  padding: 20px 0;
+}
+.brand-cards {
+  padding: 0 20px;
+}
+.brand-cards .swiper-slide img {
+  height: 500px;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+.streetstyle {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: var(--primary);
+}
+.streetstyle .heading h2 {
+  color: white;
+}
+.streetstyle .heading p {
+  color: white;
+}
+.streetstyle .swiper-slide img {
+  height: 500px;
+  padding: 0 10px;
+}
+.sneaker-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 50vh;
+  position: relative;
+}
+.sneaker-container .image {
+  background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+  background-position: left;
+}
+.sneaker-container .content {
+  background-color: #fff5e5;
+  grid-column: 2 / 4;
+}
+.sneaker-container .sneakerimg {
+  width: 60%;
+  left: 90px;
+  top: 80px;
+  position: absolute;
+}
+.sneaker-container .sneakerimg img {
+  height: 50%;
+  width: 60%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.banner-section {
+  display: grid;
+  gap: 10px;
+  padding: 10px 30px;
+  grid-template-rows: repeat(4, 150px);
+}
+.banner-section .jwells {
+  grid-row: span 2;
+  background: url(/img/Mens/jwells.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner-section .jwells .text {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.banner-section .jwells .text .line {
+  background-color: #ffffff;
+}
+.banner-section .jwells .text h3 {
+  color: #ffffff;
+}
+.banner-section .wallet {
+  background: url(https://i.pinimg.com/564x/02/df/a4/02dfa42f4b01973fd14ee4fc53f50b2e.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner-section .glasses {
+  background: url(https://i.pinimg.com/564x/8b/ae/6c/8bae6c04c492a07d4c172c56ede31fb9.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-row: span 2;
+}
+.banner-section .belts {
+  background: url(https://i.pinimg.com/474x/56/f0/95/56f095f4d52b901a5a3168dc795ebb43.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.banner-section .jwells .overlay,
+.banner-section .wallet .overlay,
+.banner-section .glasses .overlay,
+.banner-section .belts .overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+@media (min-width: 520px) {
+  .swiper-wrapper.poster-swiper {
+    display: none;
+  }
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-container .fourth,
+  .grid-container .fifth,
+  .grid-container .sixth,
+  .grid-container .seventh {
+    display: block;
+  }
+  .grid-container .fourth {
+    grid-row: 1 / 3;
+    background: url(https://i.pinimg.com/474x/68/3f/20/683f2061bdceca5cc50838bfae0e34bd.jpg);
+  }
+  .grid-container .fifth {
+    grid-row: 3 / 4;
+    grid-column: 2 / 4;
+    background: url(https://i.pinimg.com/474x/45/36/39/4536390552c55a67cf2dd5b9c31a6213.jpg);
+  }
+  .grid-container .sixth {
+    background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+  }
+  .grid-container .seventh {
+    background: url(https://i.pinimg.com/474x/8e/56/a8/8e56a8a974b94912f459764704d8643b.jpg);
+  }
 }

@@ -3,33 +3,40 @@ body {
   position: relative;
   height: 100%;
 }
-.hero-container .heading {
-  text-align: center;
-  padding-top: 10px;
-  margin: 20px 0;
-}
-.hero-container .heading h2 {
-  color: var(--primary);
-  line-height: 1;
-}
-.hero-container .heading p {
-  margin: 0;
-  color: var(--primary);
-}
-.launches .heading {
+.heading {
   text-align: center;
   padding-top: 10px;
   margin: 0;
-  padding: 20px 0;
+  padding: 30px 0;
   background-color: #0b07fad7;
 }
-.launches .heading h2 {
+.heading h2 {
   color: white;
   line-height: 1.4;
 }
-.launches .heading p {
+.heading p {
   color: white;
   margin: 0;
+}
+.sneakerpage .cursor1 {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.sneakerpage .cursor1 img {
+  width: 80px;
+}
+.hero-container .heading {
+  background-color: #ffffff;
+}
+.hero-container .heading h2 {
+  color: var(--primary);
+}
+.hero-container .heading p {
+  color: var(--primary);
 }
 .sneaker-posters {
   margin-top: 30px;
@@ -223,19 +230,10 @@ body {
   z-index: 2;
 }
 .sneaker-cards {
-  padding: 0 30px;
-}
-.sneaker-cards .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  overflow: hidden;
 }
 .sneaker-cards .swiper-slide img {
-  height: 500px;
+  height: 400px;
 }
 .step {
   width: 100%;
@@ -244,15 +242,10 @@ body {
   width: 100%;
 }
 .jordan-container .heading {
-  text-align: center;
-  padding-top: 10px;
-  margin: 0;
-  padding: 20px 8px;
+  background-color: #ffffff;
 }
 .jordan-container .heading h2 {
-  line-height: 1.3;
   color: var(--primary);
-  font-size: 30px;
 }
 .jordan-container .image {
   background: url(/img/Mens/basketball.JPG);
@@ -350,6 +343,7 @@ body {
 }
 .jordan-container2 .text {
   text-align: center;
+  z-index: 4;
 }
 .jordan-container2 .text h2 {
   line-height: 1.3;
@@ -373,13 +367,13 @@ body {
   color: #ffffff;
   border: 2px solid white;
   background-color: var(--primary);
-  width: 12.5rem;
+  width: 13.5rem;
   padding: 0.7rem;
   text-align: start;
   font-weight: 600;
   margin-top: 0.5rem;
   cursor: pointer;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 .jordan-container2 .text .btn span {
   letter-spacing: 0.2rem;
@@ -391,7 +385,7 @@ body {
   content: '\00bb';
   position: absolute;
   top: 0;
-  right: -1.25rem;
+  right: -1.15rem;
   opacity: 0;
   transition: 0.5s;
 }
@@ -399,7 +393,7 @@ body {
   box-shadow: 0 4px 8px 0 #0400ff;
 }
 .jordan-container2 .text .btn:hover span {
-  padding-right: 5rem;
+  padding-right: 3rem;
 }
 .jordan-container2 .text .btn:hover span::after {
   opacity: 1;

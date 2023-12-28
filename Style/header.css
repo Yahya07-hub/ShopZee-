@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
+ 
   
 }
 
@@ -147,7 +148,7 @@ header {
 header{
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 998;
 }
 
 
@@ -275,17 +276,18 @@ header a{
 }
 
 /* bag and wishlist */
-.bag .fa{
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3px;
-  transition: 0.6s;
+.cartIcon .fa-solid{
+  font-size: 25px;
+  transition: 0.9s;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.bag a:hover,
+.cartIcon .fa-solid:hover,
 .wishlist a:hover{
   color: rgb(255, 222, 161);
 }
+
 
 .wishlist{
   margin-right: 20px;
@@ -300,6 +302,8 @@ header a{
 .mobile{
   display: none;
 }
+
+
 
 
 /* media screen */
@@ -412,8 +416,8 @@ header a{
   header .search{
     display: none;    
   }
-  .wishlist, 
-  .bag{
+  .wishlist,
+  .cartIcon{
     display: none;
   }
 
@@ -422,7 +426,8 @@ header a{
     margin-right: -30px;
     align-items: center;
   }
-  .mobile .fa{
+  .mobile .fa,
+  .mobile .cartIcon{
     padding-left: 20px;
     font-size: 24px;
     transition: 0.7s ease;
@@ -457,6 +462,8 @@ header a{
   .bag .fa{
     font-size: 25px;
   } */
+
+  
   
 }
 

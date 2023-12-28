@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Regular Fit Patterned Shirt",
+        "brand": "H&M",
+        "price": 1999,
+        "category": "Shirts",
+        "image": "img/products/f1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Regular Fit Patterned Shirt",
+        "brand": "H&M",
+        "price": 1999,
+        "category": "Shirts",
+        "available_sizes": ["S", "M"],
+        "image": "img/products/f2.jpg"
+        
+    },
+    {
+        "id": 3,
+        "name": "Regular Fit Patterned Shirt",
+        "brand": "H&M",
+        "price": 1999,
+        "category": "Shirts",
+        "available_sizes": ["S", "M"],
+        "image": "img/products/f3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Regular Fit Patterned Shirt",
+        "brand": "H&M",
+        "price": 1999,
+        "category": "Shirts",
+        "available_sizes": ["S", "M"],
+        "image": "img/products/f4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Regular Fit Patterned Shirt",
+        "brand": "H&M",
+        "price": 1999,
+        "category": "Shirts",
+        "available_sizes": ["S", "M"],
+        "image": "img/products/f5.jpg"
+    }
+
+]

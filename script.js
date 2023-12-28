@@ -91,7 +91,7 @@ let addDatatoHTML = () => {
                     <h4><i class="fa fa-indian-rupee-sign"></i>${product.price}</h4>
                 </div>
                 <button class="cartbtn fa fa-shopping-cart"></button>`
-            productListHTML.appendChild(newProduct)
+            productListHTML.appendChild(newProductt)
         });
     }
 }

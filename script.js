@@ -63,7 +63,10 @@ let cartIcon = document.querySelector(".cartIcon")
 let closeCart = document.querySelector(".close")
 let body = document.querySelector("body")
 let productListHTML = document.querySelector(".product-list")
+let listCartHTML = document.querySelector('.listCart')
+let iconCartSpan = document.querySelector(".cartIcon span")
 
+let cart = []
 let productList = []
 
 // Cart menu toggle
@@ -91,7 +94,7 @@ let addDatatoHTML = () => {
                     <h4><i class="fa fa-indian-rupee-sign"></i>${product.price}</h4>
                 </div>
                 <button class="cartbtn fa fa-shopping-cart"></button>`
-            productListHTML.appendChild(newProductt)
+            productListHTML.appendChild(newProduct)
         });
     }
 }
@@ -104,6 +107,16 @@ productListHTML.addEventListener('click', (e) => {
         addToCart(productId)
     }
 })
+
+let addToCart = (productId) => {
+    if (cart.length <= 0) {
+        cart = [{
+            productId: productId,
+            quantity: 1
+        }]
+    }
+    console.log(cart)
+}
 
 // FETCHING PRODUCTS FROM JSON FILE
 const initApp = () => {
